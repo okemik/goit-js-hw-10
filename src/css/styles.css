@@ -1,18 +1,39 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #74ebd5, #acb6e5);
+      min-height:auto;  
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+      color: #2d3436;
+    }
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+    .card {
+      background-color: white;
+      padding: 20px 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      margin: 10px;
+      width: 300px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    a {
+      text-decoration: none;
+      color: #0984e3;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Promise Generator</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/izitoast/dist/css/iziToast.min.css" />
+  <link rel="stylesheet" href="./css/02-snackbar.css"/>
+  <style>
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 300px;
+      gap: 12px;
+      margin-top: 20px;
+    }
+    fieldset {
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <form class="form">
+    <label>
+      Delay (ms)
+      <input type="number" name="delay" required />
+    </label>
+
+    <fieldset>
+      <legend>State</legend>
+      <label>
+        <input type="radio" name="state" value="fulfilled" required />
+        Fulfilled
+      </label>
+      <label>
+        <input type="radio" name="state" value="rejected" required />
+        Rejected
+      </label>
+    </fieldset>
+
+    <button type="submit">Uyarı Oluştur</button>
+  </form>
+
+  <script type="module" src="./js/02-snackbar.js"></script>
+</body>
+</html>
